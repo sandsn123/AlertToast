@@ -578,6 +578,8 @@ public struct AlertToastModifier: ViewModifier{
         if alert().type == .loading{
             duration = 0
             tapToDismiss = false
+        } else {
+            duration = 2.0
         }
         
         if duration > 0{
